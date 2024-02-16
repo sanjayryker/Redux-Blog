@@ -18,6 +18,7 @@ const SinglePostPag = () => {
         </section>
     )}
   return (
+    <section className="postSection">
     <article>
         <h3>{post.title}</h3>
         <p>{post.body}</p>
@@ -30,6 +31,7 @@ const SinglePostPag = () => {
         </p>
         <ReactionButtons post = {post}/>           
     </article>
+    </section>
   )
 }
 

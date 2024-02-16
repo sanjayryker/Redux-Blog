@@ -6,7 +6,7 @@
 
 html {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background: white;
+  background: lightblue;
   color: black;
 }
 
@@ -21,6 +21,7 @@ button,
 select {
   font: inherit;
   margin-bottom: 1em;
+  font-size: 1.3rem;
 }
 
 header {
@@ -28,7 +29,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(7, 7, 22);
+  background-color: rgb(17, 123, 155);
   color: whitesmoke;
   position: sticky;
   top: 0;
@@ -48,7 +49,6 @@ nav ul li {
   display: inline-block;
   margin-right: 1rem;
   text-decoration: none;
-  border: 1px solid rgb(143, 143, 143);
   padding: 8px 8px;
   border-radius: 10px;
 }
@@ -62,21 +62,25 @@ nav a:hover, nav a:focus {
   text-decoration: none;
 }
 
-main {
+section {
   max-width: 500px;
   margin: auto;
+  margin-top: 1em;
 }
 
-section {
+.postSection{
+  max-width: 700px;
+  margin: auto;
   margin-top: 1em;
 }
 
 article {
-  margin: 0.5em;
+  margin: 2em 0.5em 0.5em 0.5em;
   border: 1px solid #000;
+  background-color: white;
   border-radius: 10px;
   padding: 1em;
-
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 h1 {
@@ -87,6 +91,7 @@ h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
   text-align: center;
+  color: rgb(40, 98, 151);
 }
 
 p {
@@ -99,15 +104,25 @@ p {
 form {
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 label{
   margin-bottom: 5px;
 }
 
+input{
+  padding: 5px;
+}
+
 textarea {
   height: 200px;
+  padding: 10px;
 }
+
 
 .postCredit {
   font-size: 1rem;
@@ -150,6 +165,10 @@ textarea {
   border-radius: 10px;
   padding: 1em;
   text-align: center;
+  background-color: white;
+  max-width: 500px;
+  list-style-type: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .authLink{

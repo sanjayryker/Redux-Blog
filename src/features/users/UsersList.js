@@ -15,7 +15,7 @@ const UsersList = () => {
         )})
   return (
     <section>
-        <h2 className="h2">Authors</h2>
+        <h2>Authors</h2>
         {renderedUsers}
     </section>
   )

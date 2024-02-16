@@ -31,8 +31,7 @@ const PostLis = () => {
     }
     
   return (
-    <section>
-        <h2 className='h2'>Posts</h2>
+    <section className='postSection'>
         {content}
     </section>
   )
