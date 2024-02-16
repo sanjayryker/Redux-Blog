@@ -1,13 +1,232 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background: white;
+  color: black;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+  margin-bottom: 1em;
+}
+
+header {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(7, 7, 22);
+  color: whitesmoke;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  border: 1px solid rgb(143, 143, 143);
+  padding: 8px 8px;
+  border-radius: 10px;
+}
+
+nav a, nav a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+main {
+  max-width: 500px;
+  margin: auto;
+}
+
+section {
+  margin-top: 1em;
+}
+
+article {
+  margin: 0.5em;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 1em;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  margin: 0.5em 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  margin-bottom: 5px;
+}
+
+textarea {
+  height: 200px;
+}
+
+.postCredit {
+  font-size: 1rem;
+}
+
+.postCredit a, 
+.postCredit a:visited {
+  margin-right: 0.5rem;
+  color: black;
+  text-decoration:underline;
+  border-radius: 4px;
+}
+
+.postCredit a:hover, 
+.postCredit a:focus {
+  color: hsla(0, 0%, 0%, 0.75);
+}
+
+.excerpt {
+  font-style: italic;
+}
+
+.reactionButton {
+  margin: 0 0.25em 0 0;
+  background: transparent;
+  border: none;
+  color: #000;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: palevioletred;
+  color: white;
+}
+
+.userContainer{
+  margin: 0.5em;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+}
+
+.authLink{
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width:768px) {
+  header{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  nav ul{
+    display: flex;
+    gap: 10px;
+  }
+  nav ul li {
+    font-size: 0.9rem;
+    margin-right: 0.3rem;
+    padding: 6px 6px;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+  .postCredit {
+    font-size: 0.9rem;
+  }
+
+  form{
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+  }
+  textarea {
+    padding: 10px;
+    height: 100px;
+    font-size: 15px;
+  }
+  label{
+    font-size: 1.2rem;
+  }
+
+  input{
+    padding: 10px;
+    height: 25px;
+    font-size: 15px;
+  }
+  select{
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .userContainer{
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  button{
+    font-size: 1rem;
+    padding: 3px;
+  }
+  
+  option{
+    font-size: 15px;
+  }
+
 }
